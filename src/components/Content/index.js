@@ -22,7 +22,7 @@ export default function Content() {
     async function handleSubmit(event) {
         event.preventDefault();
     
-        const response = await api.get(`users?q=${user}`)
+        const response = await api.get(`search/users?q=${user}`)
         
         setData(response.data)
     }
